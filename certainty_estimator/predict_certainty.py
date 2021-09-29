@@ -1,5 +1,5 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
-from edited_bert import BertModel, BertForSequenceClassification
+from .edited_bert import BertModel, BertForSequenceClassification
 import torch
 from torch import Tensor
 import numpy as np
