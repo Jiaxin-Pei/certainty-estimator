@@ -74,7 +74,7 @@ Cuda is disabled by default, to allow GPU calculation, please use
 `predict` is the core method of this package, 
 which takes a single text or a list of texts, and returns a list of raw values in `[1,6]` (higher means more certain, while lower means less).
 
-	```# Predict certainty for a single scientific finding
+	# Predict certainty for a single scientific finding
 	>>> text = 'Mice lacking tet1 had much lower levels of hydroxymethylation -- an intermediate step in the removal of methylation -- in the hippocampus and the cortex, which are both key to learning and memory.'
 	>>> result = estimator.predict(text)
         >>> result 
@@ -90,7 +90,7 @@ which takes a single text or a list of texts, and returns a list of raw values i
 	# when calculating certainty for a long list of findings, use the tqdm to display the progress
         >>> from tqdm import tqdm
 	>>> text = [a long list of findings]
-	>>> estimator.predict(text,tqdm=tqdm)```
+	>>> estimator.predict(text,tqdm=tqdm)
 
 
 
