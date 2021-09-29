@@ -3,7 +3,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
     name="certainty-estimator",
-    version="1.0",
+    version="1.2",
     author="Jiaxin Pei",
     author_email="pedropei@umich.edu",
     description="This package is used to estimate certainty for scientific findings",

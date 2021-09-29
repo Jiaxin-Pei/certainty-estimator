@@ -26,11 +26,11 @@ If `pip` is installed, certainty-estimator could be installed directly from it:
 ### Notes: During your first usage, the package will download a model file automatically, which is about 500MB.
 
 ### `Construct the Predictor Object`
-	>>> from certainty-estimator.predict_certainty import CertaintyEstimator
+	>>> from certainty_estimator.predict_certainty import CertaintyEstimator
 	>>> estimator = CertaintyEstimator('sentence-level')
 Cuda is disabled by default, to allow GPU calculation, please use
 
-	>>> from certainty-estimator.predict_certainty import CertaintyEstimator
+	>>> from certainty_estimator.predict_certainty import CertaintyEstimator
 	>>> estimator = CertaintyEstimator('sentence-level',cuda=True)
 
 ### `predict`
@@ -60,11 +60,11 @@ which takes a single text or a list of texts, and returns a list of raw values i
 ### Notes: During your first usage, the package will download a model file automatically, which is about 500MB.
 
 ### `Construct the Predictor Object`
-	>>> from certainty-estimator.predict_certainty import CertaintyEstimator
+	>>> from certainty_estimator.predict_certainty import CertaintyEstimator
 	>>> estimator = CertaintyEstimator('aspect-level')
 Cuda is disabled by default, to allow GPU calculation, please use
 
-	>>> from certainty-estimator.predict_certainty import CertaintyEstimator
+	>>> from certainty_estimator.predict_certainty import CertaintyEstimator
 	>>> estimator = CertaintyEstimator('aspect-level',cuda=True)
 
 ### `predict`
