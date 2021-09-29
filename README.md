@@ -43,7 +43,7 @@ which takes a single text or a list of texts, and returns a list of raw values i
 	[-0.2737383]
 	
 	# Predict certainty for a list of scientific finding
-  >>> text = ['The reason for this might be that the fetal central nervous system, which controls movements in general and facial movements in particular did not develop at the same rate and in the same manner as in fetuses of mothers who did not smoke during pregnancy.', 'Mice lacking the tet1 gene were able to learn to navigate a water maze, but were unable to extinguish the memory.']
+        >>> text = ['The reason for this might be that the fetal central nervous system, which controls movements in general and facial movements in particular did not develop at the same rate and in the same manner as in fetuses of mothers who did not smoke during pregnancy.', 'Mice lacking the tet1 gene were able to learn to navigate a water maze, but were unable to extinguish the memory.']
 	>>> estimator.predict(text)
 	[2.6891987, 5.01066]
 	
