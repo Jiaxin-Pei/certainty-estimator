@@ -48,7 +48,7 @@ which takes a single text or a list of texts, and returns a list of raw values i
 	[2.6891987, 5.01066]
 	
 	# when calculating certainty for a long list of findings, use the following code to display the progress
-  >>> from tqdm import tqdm
+  	>>> from tqdm import tqdm
 	>>> text = [a long list of findings]
 	>>> estimator.predict(text,tqdm=tqdm)
   	[2.6891987, 5.01066, ... ,4.28066, 5.77066]
