@@ -43,18 +43,18 @@ which takes a single text or a list of texts, and returns a list of raw values i
 	# Predict certainty for a single scientific finding
 	>>> text = 'The reason for this might be that the fetal central nervous system, which controls movements in general and facial movements in particular did not develop at the same rate and in the same manner as in fetuses of mothers who did not smoke during pregnancy.'
 	>>> estimator.predict(text)
-	[2.6891987]
+	>>> [2.6891987]
 	
 	# Predict certainty for a list of scientific finding
         >>> text = ['The reason for this might be that the fetal central nervous system, which controls movements in general and facial movements in particular did not develop at the same rate and in the same manner as in fetuses of mothers who did not smoke during pregnancy.', 'Mice lacking the tet1 gene were able to learn to navigate a water maze, but were unable to extinguish the memory.']
 	>>> estimator.predict(text)
-	[2.6891987, 5.01066]
+	>>> [2.6891987, 5.01066]
 	
 	# when calculating certainty for a long list of findings, use the following code to display the progress
   	>>> from tqdm import tqdm
 	>>> text = [a long list of findings]
 	>>> estimator.predict(text,tqdm=tqdm)
-  	[2.6891987, 5.01066, ... ,4.28066, 5.77066]
+  	>>>[2.6891987, 5.01066, ... ,4.28066, 5.77066]
   
   
   
@@ -83,9 +83,9 @@ which takes a single text or a list of texts, and returns a list of tuples for a
 	
 	# Predict certainty for a list of scientific finding
         >>> text = ['Mice lacking tet1 had much lower levels of hydroxymethylation -- an intermediate step in the removal of methylation -- in the hippocampus and the cortex, which are both key to learning and memory.', 'Dopamine and serotonin are important for different forms of flexibility associated with receiving reward and punishment.']
-	>>> result = estimator.predict(text)
+        >>> result = estimator.predict(text)
         >>> result 
-	>>> [[('Extent', 'Uncertain'), ('Probability', 'Certain')], [('Probability', 'Certain')]]
+        >>> [[('Extent', 'Uncertain'), ('Probability', 'Certain')], [('Probability', 'Certain')]]
   
  
 	# when calculating certainty for a long list of findings, use the tqdm to display the progress
