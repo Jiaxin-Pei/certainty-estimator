@@ -2,7 +2,7 @@
 
 ## Intro
 certainty-estimator is a package used to estimate the certainty of scientfic findings. It is released with
-EMNLP 2021 paper `Measuring Sentence-level and Aspect-level (Un)Certainty in Science Communications` by by [Jiaxin Pei](https://jiaxin-pei.github.io/) and [David Jurgens](https://jurgens.people.si.umich.edu/).
+EMNLP 2021 paper `Measuring Sentence-level and Aspect-level (Un)Certainty in Science Communications` by [Jiaxin Pei](https://jiaxin-pei.github.io/) and [David Jurgens](https://jurgens.people.si.umich.edu/).
 
 
 ## Install 
