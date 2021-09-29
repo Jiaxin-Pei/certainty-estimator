@@ -51,7 +51,7 @@ which takes a single text or a list of texts, and returns a list of raw values i
   >>> from tqdm import tqdm
 	>>> text = [a long list of findings]
 	>>> estimator.predict(text,tqdm=tqdm)
-  [2.6891987, 5.01066, ... ,4.28066, 5.77066]
+  	[2.6891987, 5.01066, ... ,4.28066, 5.77066]
   
   
   
