@@ -77,15 +77,15 @@ which takes a single text or a list of texts, and returns a list of tuples for a
 	# Predict certainty for a single scientific finding
 	>>> text = 'Mice lacking tet1 had much lower levels of hydroxymethylation -- an intermediate step in the removal of methylation -- in the hippocampus and the cortex, which are both key to learning and memory.'
 	>>> result = estimator.predict(text)
-        >>> print(result)
+	>>> print(result)
 	>>> [[('Extent', 'Uncertain'), ('Probability', 'Certain')]]
 	#By default, only returns the presented aspects and their certainty.
 	
 	# Predict certainty for a list of scientific finding
-        >>> text = ['Mice lacking tet1 had much lower levels of hydroxymethylation -- an intermediate step in the removal of methylation -- in the hippocampus and the cortex, which are both key to learning and memory.', 'Dopamine and serotonin are important for different forms of flexibility associated with receiving reward and punishment.']
-        >>> result = estimator.predict(text)
-        >>> print(result)
-        >>> [[('Extent', 'Uncertain'), ('Probability', 'Certain')], [('Probability', 'Certain')]]
+	>>> text = ['Mice lacking tet1 had much lower levels of hydroxymethylation -- an intermediate step in the removal of methylation -- in the hippocampus and the cortex, which are both key to learning and memory.', 'Dopamine and serotonin are important for different forms of flexibility associated with receiving reward and punishment.']
+	>>> result = estimator.predict(text)
+	>>> print(result)
+	>>> [[('Extent', 'Uncertain'), ('Probability', 'Certain')], [('Probability', 'Certain')]]
   
  
 	# when calculating certainty for a long list of findings, use the tqdm to display the progress
