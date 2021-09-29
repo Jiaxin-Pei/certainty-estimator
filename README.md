@@ -21,7 +21,9 @@ If `pip` is installed, certainty-estimator could be installed directly from it:
 	tqdm
 	
 	
-
+## Example:
+`git clone https://github.com/Jiaxin-Pei/certainty-estimator.git`
+`python3 play.py` 
     
 
 ## Estimating sentence-level certainty
