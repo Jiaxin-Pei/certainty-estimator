@@ -1,2 +1,2 @@
 from .predict_certainty import CertaintyEstimator
-import edited_bert
+from edited_bert import *

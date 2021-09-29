@@ -21,6 +21,10 @@ If `pip` is installed, certainty-estimator could be installed directly from it:
 	tqdm
 	
 	
+
+Please check out this [github repo](https://github.com/Jiaxin-Pei/certainty-estimator) regarding how to use this package.
+    
+
 ## Estimating sentence-level certainty
 
 ### Notes: During your first usage, the package will download a model file automatically, which is about 500MB.
