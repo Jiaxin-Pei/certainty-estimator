@@ -22,7 +22,6 @@ If `pip` is installed, certainty-estimator could be installed directly from it:
 	
 	
 
-Please check out this [github repo](https://github.com/Jiaxin-Pei/certainty-estimator) regarding how to use this package.
     
 
 ## Estimating sentence-level certainty
