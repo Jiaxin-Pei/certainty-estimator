@@ -72,17 +72,18 @@ Cuda is disabled by default, to allow GPU calculation, please use
 
 ### `predict`
 `predict` is the core method of this package, 
-which takes a single text or a list of texts, and returns a list of raw values in `[1,6]` (higher means more certain, while lower means less).
+which takes a single text or a list of texts, and returns a list of tuples for aspect-level certainty.
 
 	# Predict certainty for a single scientific finding
 	>>> text = 'Mice lacking tet1 had much lower levels of hydroxymethylation -- an intermediate step in the removal of methylation -- in the hippocampus and the cortex, which are both key to learning and memory.'
 	>>> result = estimator.predict(text)
         >>> result 
 	[[('Extent', 'Uncertain'), ('Probability', 'Certain')]]
+	#By default, only returns the presented aspects and their certainty.
 	
 	# Predict certainty for a list of scientific finding
         >>> text = ['Mice lacking tet1 had much lower levels of hydroxymethylation -- an intermediate step in the removal of methylation -- in the hippocampus and the cortex, which are both key to learning and memory.', 'Dopamine and serotonin are important for different forms of flexibility associated with receiving reward and punishment.']
-	>>> result = estimator.predict(text, get_processed_output = True)
+	>>> result = estimator.predict(text)
         >>> result 
 	[[('Extent', 'Uncertain'), ('Probability', 'Certain')], [('Probability', 'Certain')]]
   
