@@ -8,7 +8,7 @@ EMNLP 2021 paper `Measuring Sentence-level and Aspect-level (Un)Certainty in Sci
 ## Install 
 
 ### Use pip
-If `pip` is installed, question-intimacy could be installed directly from it:
+If `pip` is installed, certainty-estimator could be installed directly from it:
 
     pip3 install certainty-estimator
 
