@@ -1,4 +1,4 @@
-from predict_certainty import CertaintyEstimator
+from certainty_estimator.predict_certainty import CertaintyEstimator
 from tqdm import tqdm
 
 findings = ['Dopamine and serotonin are important for different forms of flexibility associated with receiving reward and punishment.',
