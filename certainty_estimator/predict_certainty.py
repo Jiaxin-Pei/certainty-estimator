@@ -116,7 +116,7 @@ class CertaintyEstimator(object):
                 all_preds.extend(np.transpose(predicted,(1,0,2)))
 
             all_res = np.argmax(all_preds, axis=2)
-            labels = ['Number','Extent','Probability','Condition','Suggestion','Psychological']
+            labels = ['Number','Extent','Probability','Condition','Suggestion','Framing']
             mapping = {0:'Uncertain', 1:'NotPresent', 2:'Certain'}
             res_with_labels = []
             present_aspect_certainty = []
@@ -147,7 +147,7 @@ class CertaintyEstimator(object):
                 all_preds.extend(np.transpose(predicted,(1,0,2)))
 
             all_res = np.argmax(all_preds, axis=2)
-            labels = ['Number','Extent','Probability','Condition','Suggestion','Psychological']
+            labels = ['Number','Extent','Probability','Condition','Suggestion','Framing']
             mapping = {0:'Uncertain', 1:'NotPresent', 2:'Certain'}
             res_with_labels = []
             present_aspect_certainty = []
